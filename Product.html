@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- wow css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- main file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="ProductPage">
+      <!-- Start Sidebar -->
+      <div class="sidebar">
+        <h3>Eslam</h3>
+        <ul>
+          <li>
+            <a href="index.html" class="">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="Feedback.html" class="">
+              <i class="fa-regular fa-comment"></i>
+              <span>Feedback</span>
+            </a>
+          </li>
+          <li>
+            <a href="Clients.html" class="">
+              <i class="fa-regular fa-user"></i>
+              <span>Clients</span>
+            </a>
+          </li>
+          <li>
+            <a href="Product.html" class="active">
+              <i class="fa-brands fa-product-hunt"></i>
+              <span>Product</span>
+            </a>
+          </li>
+          <li>
+            <a href="TableOfProduct.html" class="">
+              <i class="fa-solid fa-table-list"></i>
+              <span>Table of Product</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <!-- Start Content -->
+      <div class="content">
+        <!-- Start Header -->
+        <header>
+          <div class="search">
+            <input type="search" placeholder="Type A keyword" />
+          </div>
+          <div class="box">
+            <img src="img/avatar.png" alt="" />
+            <a href="login.html" class="btn">Logout</a>
+          </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start main heading -->
+        <h1>Product</h1>
+        <!-- End main heading -->
+        <!-- Start Product Form -->
+        <div class="Form">
+          <form action="">
+            <div class="inputDitails">
+              <label for="">Name</label>
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="inputDitails">
+              <label for="">Product Code</label>
+              <input type="text" placeholder="Product Code">
+            </div>
+            <div class="inputDitails">
+              <label for="">Category</label>
+              <input type="text" placeholder="Category">
+            </div>
+            <div class="inputDitails">
+              <label for="">Price</label>
+              <input type="text" placeholder="Price">
+            </div>
+            <div class="inputDitails">
+              <label for="">Discounted Price</label>
+              <input type="text" placeholder="Discounted Price">
+            </div>
+            <div class="inputDitails">
+              <label for="">Weight</label>
+              <input type="text" placeholder="Weight">
+            </div>
+            <div class="inputDitails">
+              <label for="">Image</label>
+              <input type="file" placeholder="Image" class="custom-file-input">
+            </div>
+            <div class="inputDitails">
+              <label for="">Quantity in store</label>
+              <input type="text" placeholder="Quantity in store">
+            </div>
+            <div class="inputDitails">
+              <label for="">Reoder Point</label>
+              <input type="text" placeholder="Reoder Point">
+            </div>
+            <div class="inputDitails">
+              <label for="">Expiry Date</label>
+              <input type="text" placeholder="Expiry Date">
+            </div>
+            <div class="inputDitails">
+              <label for="">Shelf ID</label>
+              <input type="number" placeholder="Shelf ID">
+            </div>
+            <div class="inputDitails">
+              <label for="">Description</label>
+              <textarea name="" id="" cols="0" rows="5" placeholder="Description"></textarea>
+            </div>
+            <button type="submit">Add product</button>
+          </form>
+        </div>
+        <!-- Shelf -->
+        <h1>Shelf</h1>
+        <div class="Form">
+          <form action="">
+            <div class="inputDitails">
+              <label for="">Shelf Number</label>
+              <input type="number" placeholder="Shelf Number">
+            </div>
+            <div class="inputDitails">
+              <label for="">Capacity</label>
+              <input type="text" placeholder="Capacity">
+            </div>
+            <button type="submit">Add Shelf</button>
+          </form>
+        </div>
+        <!-- End Product Form -->
+      <!-- End Content -->
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
