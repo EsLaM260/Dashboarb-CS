@@ -1,5 +1,3 @@
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -99,15 +97,8 @@ a {
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
 }
-.signup_form {
-  display: none;
-}
-.form_container.active .signup_form {
-  display: block;
-}
-.form_container.active .login_form {
-  display: none;
-}
+
+
 .form_close {
   position: absolute;
   top: 10px;
@@ -190,7 +181,7 @@ a {
 }
 .form_container .button {
   background: #7d2ae8;
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   padding: 10px 0;
   border-radius: 10px;
@@ -199,4 +190,15 @@ a {
   font-size: 12px;
   text-align: center;
   margin-top: 15px;
+}
+.wrong{
+  text-align: center;
+  font-size: 13px;
+  color: red;
+  padding: 10px;
+  margin-top: 12px;
+  display: none;
+}
+.wrong.show{
+  display: block;
 }
