@@ -70,7 +70,7 @@
           </div>
           <div class="box">
             <img src="img/avatar.png" alt="" />
-            <a href="login.html" class="btn">Logout</a>
+            <a href="login.html" class="btn logout">Logout</a>
           </div>
         </header>
         <!-- End Header -->
@@ -78,11 +78,11 @@
         <h1>Edit Product</h1>
         <!-- End main heading -->
         <!-- Start Product Form -->
-        <div class="Form">
+        <div class="Form editProduct">
           <form action="">
             <div class="inputDitails">
               <label for="">Name</label>
-              <input type="text" placeholder="Name" value="Product 1">
+              <input type="text" placeholder="Name" value="carrot">
             </div>
             <div class="inputDitails">
               <label for="">Product Code</label>
@@ -90,42 +90,46 @@
             </div>
             <div class="inputDitails">
               <label for="">Category</label>
-              <input type="text" placeholder="Category" value="Category 1">
+              <input type="text" placeholder="Category" value="vegetable">
             </div>
             <div class="inputDitails">
-              <label for="">Price</label>
-              <input type="text" placeholder="Price" value="10$">
+              <label for="">Price (pound)</label>
+              <input type="number" placeholder="Price" value="20">
             </div>
             <div class="inputDitails">
-              <label for="">Discounted Price</label>
-              <input type="text" placeholder="Discounted Price" value="1$">
+              <label for="">Discounted Price (pound)</label>
+              <input type="number" placeholder="Discounted Price" value="2">
             </div>
             <div class="inputDitails">
-              <label for="">Weight</label>
-              <input type="text" placeholder="Weight" value="200 g">
+              <label for="">Weight (g)</label>
+              <input type="number" placeholder="Weight" value="250">
             </div>
             <div class="inputDitails">
               <label for="">Image</label>
-              <input type="file" placeholder="Image" class="custom-file-input">
+              <input type="file" placeholder="Image" class="custom-file-input" value="/img/avatar.png">
             </div>
             <div class="inputDitails">
               <label for="">Quantity in store</label>
-              <input type="text" placeholder="Quantity in store" value="Any">
+              <input type="number" placeholder="Quantity in store" value="5">
             </div>
             <div class="inputDitails">
               <label for="">Reoder Point</label>
-              <input type="text" placeholder="Reoder Point" value="Any">
+              <input type="text" placeholder="Reoder Point" value="any">
             </div>
             <div class="inputDitails">
               <label for="">Expiry Date</label>
-              <input type="text" placeholder="Expiry Date" value="20/12/2024">
+              <input type="date" placeholder="Expiry Date" >
             </div>
             <div class="inputDitails">
               <label for="">Shelf ID</label>
-              <input type="text" placeholder="Shelf ID" value="20">
+              <input type="number" placeholder="Shelf ID" value="2">
             </div>
+            <div class="inputDitails">
+              <label for="">Description</label>
+              <textarea name="" id="" cols="0" rows="5" placeholder="Description"></textarea>
+            </div>
+            <button type="submit">Resend</button>
           </form>
-          <button>Resend</button>
         </div>
         <!-- End Product Form -->
       <!-- End Content -->

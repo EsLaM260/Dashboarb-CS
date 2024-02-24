@@ -13,9 +13,9 @@ export const handleAuth = (app) => {
 
   onAuthStateChanged(auths, (user) => {
     console.log("user", user);
-    console.log(location.href);
 
-    if (!user && location.href != 'https://eslam260.github.io/Dashboarb-CS/login.html') {
+    const isLoginPage = location.href.includes('/login.html');
+    if (!user && !isLoginPage) {
       location.replace("/login.html");
     }
 

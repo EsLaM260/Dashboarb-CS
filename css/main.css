@@ -653,6 +653,18 @@ color: var(--white-color);
   background-color: var(--second-background);
   border-radius: 6px;
 }
+.ProductPage .Form .inputDitails select {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: var(--second-background);
+  border-radius: 6px;
+}
+.ProductPage .Form .inputDitails select:focus-visible{
+  outline: none;
+  border: none;
+}
 .ProductPage .Form .inputDitails textarea{
   width: 100%;
   display: block;
