@@ -1,7 +1,15 @@
 
 import { handleAuth } from "./auth.js";
 import { handleData } from "./data.js";
-import {handleLoginIcon} from "./script.js"
+import { handleLoginIcon } from "./script.js"
+
+let loading = document.querySelector("#loading");
+window.onload = function () {
+  setTimeout(() => {
+    loading.classList.add("hide");
+    document.body.style.overflow = "auto";
+  }, 2000)
+}
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";

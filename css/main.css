@@ -91,9 +91,57 @@ input:focus{
   }
 }
 /* End Global Rules */
-/* Start Login Page */
-
-/* End Login Page */
+body{
+  overflow: hidden;
+}
+/* Start loadin Page */
+.mainloading{
+  position: fixed;
+  inset: 0;
+  background-color: var(--main-background);
+  z-index: 1000000000000000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 1s;
+}
+.mainloading.hide{
+  opacity: 0;
+  z-index: -1000;
+}
+.loader {
+  width: 80px;
+  height: 60px;
+  --c:no-repeat linear-gradient(#fff 0 0);
+  background:
+    var(--c) 0    100%/12px 60px,
+    var(--c) 50%  100%/12px 40px,
+    var(--c) 100% 100%/12px 20px;
+  position: relative;
+  clip-path: inset(-100% 0);
+}
+.loader:before{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  left: -16px;
+  top: 0;
+  animation: 
+    l5-1 2s   linear infinite,
+    l5-2 0.5s cubic-bezier(0,200,.8,200) infinite;
+}
+@keyframes l5-1 {
+  0%   {left:-30px;transform:translateY(-25px)}
+  100% {left:calc(100% + 20px);transform:translateY(45px)}
+}
+@keyframes l5-2 {
+  100% {top:-0.1px}
+}
+/* End loadin Page */
 /* Start Dashboard page */
 .dashboardPage{
   min-height: 100vh;

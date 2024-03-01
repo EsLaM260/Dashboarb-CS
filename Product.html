@@ -23,6 +23,10 @@
     <title>Product</title>
   </head>
   <body>
+    <!-- loading -->
+    <div class="mainloading" id="loading">
+      <div class="loader"></div> 
+    </div>
     <div class="ProductPage">
       <!-- Start Sidebar -->
       <div class="sidebar">
@@ -82,74 +86,54 @@
           <form action="">
             <div class="inputDitails">
               <label for="">Name</label>
-              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Name" name="Name">
             </div>
             <div class="inputDitails">
               <label for="">Product Code</label>
-              <input type="text" placeholder="Product Code">
+              <input type="text" placeholder="Product Code" name="ProductCode">
             </div>
             <div class="inputDitails">
               <label for="">Category</label>
-              <select class="allCategoryInProduct"></select>
+              <select class="allCategoryInProduct" name="category"></select>
             </div>
             <div class="inputDitails">
               <label for="">Price (pound)</label>
-              <input type="number" placeholder="Price">
-            </div>
-            <div class="inputDitails">
-              <label for="">Discounted Price (pound)</label>
-              <input type="number" placeholder="Discounted Price">
+              <input type="number" placeholder="Price" name="Price">
             </div>
             <div class="inputDitails">
               <label for="">Weight (g)</label>
-              <input type="number" placeholder="Weight">
+              <input type="number" placeholder="Weight" name="Weight">
             </div>
-            <div class="inputDitails">
+            <!-- <div class="inputDitails">
               <label for="">Image</label>
               <input type="file" placeholder="Image" class="custom-file-input">
+            </div> -->
+            <div class="inputDitails">
+              <label for="">Image URL</label>
+              <input type="text" placeholder="Image" name="Image">
             </div>
             <div class="inputDitails">
               <label for="">Quantity in store</label>
-              <input type="number" placeholder="Quantity in store">
-            </div>
-            <div class="inputDitails">
-              <label for="">Reoder Point</label>
-              <input type="text" placeholder="Reoder Point">
+              <input type="number" placeholder="Quantity in store" name="QuantityInStore">
             </div>
             <div class="inputDitails">
               <label for="">Expiry Date</label>
-              <input type="date" placeholder="Expiry Date">
+              <input type="date" placeholder="Expiry Date" name="ExpiryDate">
             </div>
             <div class="inputDitails">
               <label for="">Shelf ID</label>
-              <input type="number" placeholder="Shelf ID">
+              <input type="number" placeholder="Shelf ID" name="ShelfID">
             </div>
             <div class="inputDitails">
               <label for="">Description</label>
-              <textarea name="" id="" cols="0" rows="5" placeholder="Description"></textarea>
+              <textarea name="Description" id="" cols="0" rows="5" placeholder="Description"></textarea>
             </div>
             <button type="submit">Add product</button>
-          </form>
-        </div>
-        <!-- Shelf -->
-        <h1>Shelf</h1>
-        <div class="Form">
-          <form action="">
-            <div class="inputDitails">
-              <label for="">Shelf Number</label>
-              <input type="number" placeholder="Shelf Number">
-            </div>
-            <div class="inputDitails">
-              <label for="">Capacity</label>
-              <input type="text" placeholder="Capacity">
-            </div>
-            <button type="submit">Add Shelf</button>
           </form>
         </div>
         <!-- End Product Form -->
       <!-- End Content -->
     </div>
-
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
